@@ -1,13 +1,264 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.background{
+  width: 100%;
+  height: auto;
+  padding: 5px 25px;
+  background-image: linear-gradient(to left,#1e57b4, #011538);
+}
+
+/* navbar */
+.navbar{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.navbar .logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar .logo .logo-icon{
+  color: #1daede;
+}
+
+.navbar .logo h6{
+  font-size: 24px;
+  color: #1daede;
+  letter-spacing: 0.2em;
+}
+
+.navbar .social-links{
+  display: flex;
+  align-items: center;
+}
+
+.navbar .social-links .social-icon{
+  margin: 0 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar .social-links .admin-login{
+  padding: 10px 14px;
+  background: #1daede;
+  border: hidden;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+  margin-left: 20px;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* hero */
+.hero-box{
+  width: 100%;
+  max-width: 1100px;
+  height: 550px;
+  padding: 50px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-box .content{
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-box h3{
+  margin: 7px 0;
+  font-size: 42px;
+  color: #fff;
+}
+
+.hero-box h3 .name{
+  color: #f0ab00;
+}
+
+.hero-box .content button{
+  width: 165px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-box .content button:hover{
+  background: #1daede;
+}
+
+.hero-box .img{
+  flex: 1.5;
+  height: auto;
+}
+
+.hero-box .img img{
+  width: 100%;
+  height: 100%;
+}
+
+/* about */
+.about-me{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background: #001435;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-me .section-heading{
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.about-me .tagline{
+  color: #fff;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.about-me .tagline .ui-ux{
+  color: #14bbea;
+}
+
+.about-me .info{
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 24px;
+  margin-top: 25px;
+}
+
+.about-me .contact-btns-group{
+  margin-top: 35px;
+}
+
+.about-me .contact-btns-group button{
+  width: 130px;
+  padding: 10px 14px;
+  margin: 0 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-me .contact-btns-group button.fiverr-btn{
+  background: #1dbd72;
+  color: #fff;
+  font-size: 14px;
+}
+
+.about-me .contact-btns-group button.upwork-btn{
+  border: 1px solid #14a800;
+  background: transparent;
+  color: #fff;
+}
+
+.about-me .core-programming-section{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-me .core-programming-section h2{
+  color: #fff;
+  font-size: 28px;
+}
+
+.about-me .core-programming-section .principles-cards-box{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.about-me .core-programming-section .principles-cards-box .card{
+  width: 250px;
+  height: auto;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  cursor: pointer;
+}
+
+.about-me .core-programming-section .principles-cards-box .card.black{
+  background-color: #000a1a;
+}
+
+.about-me .core-programming-section .principles-cards-box .card .icon{
+  color: #1daede;
+}
+
+.about-me .core-programming-section .principles-cards-box .card .heading{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.card.black .heading{
+  color: #ffffff;
+}
+
+.about-me .core-programming-section .principles-cards-box .card .text{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #000;
+  text-align: center;
+}
+
+.about-me .core-programming-section .principles-cards-box .card.card.black .text{
+  color: #cccccc;
 }
