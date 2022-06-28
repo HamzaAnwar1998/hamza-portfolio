@@ -16,7 +16,7 @@ const Skills=()=>{
                     <h3>CSS</h3>
                     <CircularProgressbar value={90} text={`${90}%`} 
                     styles={buildStyles({
-                        textColor: '#f0ab00'
+                        textColor: '#f0ab00',
                     })}/>;
                 </div>
                 <div className='progress'>
