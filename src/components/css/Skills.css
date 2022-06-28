@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap');
+
+.skills-box{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #001435;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skills-box .section-heading{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.skills-box .tagline{
+    color: #fff;
+    font-size: 32px;
+    margin-top: 10px;
+}
+  
+.skills-box .tagline .ui-ux{
+    color: #14bbea;
+}
+
+.circular-progress-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.circular-progress-box .progress{
+    width: 200px;
+    height: 200px;
+    margin: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress-box .progress h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
