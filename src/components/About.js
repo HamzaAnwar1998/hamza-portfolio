@@ -10,7 +10,7 @@ export const About = () => {
         <h3 className='section-heading'>About Me</h3>
         <h2 className='tagline'>
             I love to Code 
-            <span className='ui-ux'>UI/UX</span>
+            <span className='ui-ux'> UI/UX</span>
         </h2>
         <p className='info'>
             I am a React Redux Developer. I have serious passion for
