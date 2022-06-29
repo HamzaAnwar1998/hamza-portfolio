@@ -35,7 +35,7 @@
     margin-top: 50px;
 }
 
-.circular-progress-box .progress{
+.circular-progress-box .progress-box{
     width: 200px;
     height: 200px;
     margin: 20px 35px;
@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-.circular-progress-box .progress h3{
+.circular-progress-box .progress-box h3{
     color: #fff;
     margin-bottom: 15px;
 }

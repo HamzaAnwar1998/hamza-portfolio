@@ -1,18 +1,15 @@
-import { About } from "./components/About";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
-import Skills from "./components/Skills";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Home } from './components/Home';
+import {Dashboard} from './components/Dashboard';
 
 function App() {
   return (
-    <div className="wrapper">
-      <div className="background">
-        <Navbar/>
-        <Hero/>
-      </div>
-      <About/>
-      <Skills/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </Router>
   );
 }
 
