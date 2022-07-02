@@ -1,15 +1,19 @@
+/* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable no-unused-vars */
 // import firebase/app
 import 'firebase/app'
 
-// we need to import and firebase/auth
+// we need to import and firebase/auth firebase/storage
 import 'firebase/auth'
+import 'firebase/storage'
 
 // import initializeApp to initialize app from firebase/app
 import { initializeApp } from 'firebase/app';
 
 // neccessary tools from firebase/auth
 import { getAuth } from 'firebase/auth';
+// neccessary tools from firebase/storage
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = initializeApp({
     apiKey: "AIzaSyCwL4mYYGeuqjkYgktTr3fEp4MlUc7GTm4",
@@ -22,5 +26,6 @@ const firebaseConfig = initializeApp({
 });
 
 const auth = getAuth(firebaseConfig);
+export const storage = getStorage(firebaseConfig);
 
 export default auth;
