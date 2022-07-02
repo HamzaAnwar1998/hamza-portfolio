@@ -44,7 +44,7 @@
   color: #1daede;
 }
 
-.navbar .logo h6{
+.navbar .logo .logo-text{
   font-size: 24px;
   color: #1daede;
   letter-spacing: 0.2em;
@@ -103,7 +103,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.modal-container h2{
+.modal-container .modal-heading{
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 7px;
   padding-bottom: 2px;
@@ -122,15 +122,15 @@
   color: #fff;
 }
 
+.modal-container button:hover{
+  color: #fff;
+}
+
 .err-message{
   color: red;
   font-size: 12px;
   font-weight: 600;
   margin-top: 5px;
-}
-
-.modal-container button:hover{
-  color: #fff;
 }
 
 .delete-icon{
@@ -170,18 +170,18 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hero-box h3{
+.hero-box .hero-heading{
   margin: 7px 0;
   font-size: 42px;
   font-weight: 600;
   color: #fff;
 }
 
-.hero-box h3 .name{
+.hero-box .hero-heading .name{
   color: #f0ab00;
 }
 
-.hero-box .content button{
+.hero-box .content .view-resume-btn{
   width: 165px;
   height: 50px;
   background: transparent;
@@ -196,16 +196,16 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hero-box .content button:hover{
+.hero-box .content .view-resume-btn:hover{
   background: #1daede;
 }
 
-.hero-box .img{
+.hero-box .hero-img{
   flex: 1.5;
   height: auto;
 }
 
-.hero-box .img img{
+.hero-box .hero-img img{
   width: 100%;
   height: 100%;
 }
@@ -222,7 +222,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.about-me .section-heading{
+.about-me .about-heading{
   color: #fff;
   font-size: 24px;
   font-weight: 600;
@@ -245,7 +245,6 @@
   text-align: center;
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
   letter-spacing: 0.09em;
   line-height: 24px;
   margin-top: 25px;
@@ -287,7 +286,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.about-me .core-programming-section h2{
+.about-me .core-programming-section .core-programming-heading{
   color: #fff;
   font-size: 28px;
   font-weight: 600;
@@ -317,21 +316,21 @@
   background-color: #000a1a;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .icon{
+.about-me .core-programming-section .principles-cards-box .card .card-icon{
   color: #1daede;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .heading{
+.about-me .core-programming-section .principles-cards-box .card .card-heading{
   font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
 }
 
-.card.black .heading{
+.card.black .card-heading{
   color: #ffffff;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .text{
+.about-me .core-programming-section .principles-cards-box .card .card-text{
   font-size: 14px;
   font-weight: 600;
   margin-top: 15px;
@@ -339,6 +338,6 @@
   text-align: center;
 }
 
-.about-me .core-programming-section .principles-cards-box .card.card.black .text{
+.about-me .core-programming-section .principles-cards-box .card.card.black .card-text{
   color: #cccccc;
 }

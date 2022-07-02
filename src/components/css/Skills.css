@@ -11,21 +11,21 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.skills-box .section-heading{
+.skills-box .skills-heading{
     color: #fff;
     font-size: 24px;
     margin-top: 20px;
     font-weight: 600;
 }
 
-.skills-box .tagline{
+.skills-box .skills-tagline{
     color: #fff;
     font-size: 32px;
     margin-top: 10px;
     font-weight: 600;
 }
   
-.skills-box .tagline .ui-ux{
+.skills-box .skills-tagline .skills-ui-ux{
     color: #14bbea;
 }
 
@@ -47,7 +47,8 @@
     align-items: center;
 }
 
-.circular-progress-box .progress-box h3{
+.circular-progress-box .progress-box .progress-heading{
     color: #fff;
     margin-bottom: 15px;
+    font-size: 24px;
 }

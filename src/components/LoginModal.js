@@ -26,7 +26,7 @@ export const LoginModal = ({setLoginModal}) => {
     <div className='modal-background'>
         <div className='modal-container'>
             <div className='delete-icon' onClick={()=>setLoginModal(false)}>x</div>
-            <h2>Admin-Login</h2>
+            <h2 className='modal-heading'>Admin-Login</h2>
             <form className='form-group' onSubmit={handleLogin}>
                 <input type='email' className='form-control' required
                 placeholder='Enter Email'

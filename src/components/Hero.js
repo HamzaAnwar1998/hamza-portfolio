@@ -5,11 +5,11 @@ export const Hero = () => {
   return (
     <div className='hero-box'>
         <div className='content'>
-            <h3>Hello, I'm <span className='name'>Hamza Anwar</span></h3>
-            <h3>I am front-end web developer</h3>
-            <button>View my Resume</button>
+            <h3 className='hero-heading'>Hello, I'm <span className='name'>Hamza Anwar</span></h3>
+            <h3 className='hero-heading'>I am front-end web developer</h3>
+            <button className='view-resume-btn'>View my Resume</button>
         </div>
-        <div className='img'>
+        <div className='hero-img'>
             <img src={hero5} alt='hero-5'/>
         </div>
     </div>

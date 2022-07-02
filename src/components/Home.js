@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import { About } from "./About";
-import { Hero } from "./Hero";
-import { ImgModal } from './ImgModal';
-import { LoginModal } from './LoginModal';
 import { Navbar } from "./Navbar";
+import { LoginModal } from './LoginModal';
+import { Hero } from "./Hero";
+import { About } from "./About";
+import { Skills } from "./Skills";
 import { Projects } from "./Projects";
-import Skills from "./Skills";
+import { ImgModal } from './ImgModal';
 
 export const Home = () => {
 

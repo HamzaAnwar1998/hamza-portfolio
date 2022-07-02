@@ -16,22 +16,22 @@ export const Projects = ({setImgModal, setProjectImg}) => {
     <>
      {projects.length>0&&(
         <div className='projects-div'>
-          <h3 className='section-heading'>Projects</h3>
-          <h2 className='tagline'>
+          <h3 className='projects-heading'>Projects</h3>
+          <h2 className='projects-tagline'>
             Checkout some of my best 
-            <span className='ui-ux'> projects</span>
+            <span className='projects-ui-ux'> projects</span>
           </h2>
           <div className='categories-btns-div'>
-              <button>All</button>
-              <button>UI-Development</button>
-              <button>React-JS</button>
-              <button>Firebase</button>
+              <button className='categories-btns active'>All</button>
+              <button className='categories-btns'>UI-Development</button>
+              <button className='categories-btns'>React-JS</button>
+              <button className='categories-btns'>Firebase</button>
           </div>
           <div className='projects-wrapper'>
             {projects.map((project)=>(
                 <div className='project-card' key={project.id}>
                     <div className='project-content'>
-                      <h3 className='title'>{project.title}</h3>
+                      <h4 className='title'>{project.title}</h4>
                       <p className='description'>{project.description}</p>
                       <div className='tech'>{project.tech}</div>
                       <div className='project-btns-group'>

@@ -12,7 +12,7 @@ export const Navbar = ({setLoginModal}) => {
     <nav className='navbar'>
         <div className='logo'>
             <span className='logo-icon'><Icon icon={ic_code} size={72}/></span>
-            <h6>HAMZA</h6>
+            <h6 className='logo-text'>HAMZA</h6>
         </div>
         <div className='social-links'>
             <a className='social-icon' target={'_blank'} rel='noreferrer' href="https://www.linkedin.com/in/hamza-anwar75/"><Icon icon={linkedin} size={22}/></a>

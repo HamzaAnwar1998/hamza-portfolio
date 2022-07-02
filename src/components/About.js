@@ -7,7 +7,7 @@ import {ic_emoji_objects_outline} from 'react-icons-kit/md/ic_emoji_objects_outl
 export const About = () => {
   return (
     <div className='about-me'>
-        <h3 className='section-heading'>About Me</h3>
+        <h3 className='about-heading'>About Me</h3>
         <h2 className='tagline'>
             I love to Code 
             <span className='ui-ux'> UI/UX</span>
@@ -24,32 +24,32 @@ export const About = () => {
             <button className='fiverr-btn'>Fiverr</button>
         </div>
         <div className='core-programming-section'>
-            <h2>Core Programming Principles</h2>
+            <h2 className='core-programming-heading'>Core Programming Principles</h2>
             <div className='principles-cards-box'>
                 <div className='card'>
-                    <span className='icon'>
+                    <span className='card-icon'>
                         <Icon icon={ic_speed} size={88}/>
                     </span>
-                    <h5 className='heading'>Fast</h5>
-                    <p className='text'>
+                    <h5 className='card-heading'>Fast</h5>
+                    <p className='card-text'>
                         Fast load times and lag free interaction, my highest priority.
                     </p>
                 </div>
                 <div className='card black'>
-                    <span className='icon'>
+                    <span className='card-icon'>
                         <Icon icon={ic_devices_other} size={88}/>
                     </span>
-                    <h5 className='heading'>Responsive</h5>
-                    <p className='text'>
+                    <h5 className='card-heading'>Responsive</h5>
+                    <p className='card-text'>
                         My layouts will work on any device, big or small.
                     </p>
                 </div>
                 <div className='card'>
-                    <span className='icon'>
+                    <span className='card-icon'>
                         <Icon icon={ic_emoji_objects_outline} size={88}/>
                     </span>
-                    <h5 className='heading'>Dynamic</h5>
-                    <p className='text'>
+                    <h5 className='card-heading'>Dynamic</h5>
+                    <p className='card-text'>
                         Websites don't have to be static, I love making pages come to life.
                     </p>
                 </div>
