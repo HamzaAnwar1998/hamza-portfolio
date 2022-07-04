@@ -26,6 +26,36 @@ export const Home = () => {
     },[])
   })
 
+  // to hide body scroll for login modal
+  useEffect(()=>{
+    if(loginModal===true){
+      document.body.style.overflow="hidden";
+    }
+    else if(loginModal===false){
+      document.body.style.overflow="auto";
+    }
+  },[loginModal])
+
+  // to hide body scroll for resume modal
+  useEffect(()=>{
+    if(resumeModal===true){
+      document.body.style.overflow="hidden";
+    }
+    else if(resumeModal===false){
+      document.body.style.overflow="auto";
+    }
+  },[resumeModal])
+
+  // to hide body scroll for project img modal
+  useEffect(()=>{
+    if(imgModal===true){
+      document.body.style.overflow="hidden";
+    }
+    else if(imgModal===false){
+      document.body.style.overflow="auto";
+    }
+  },[imgModal])
+
   return (
     <div className="wrapper">
       <div className="background">
