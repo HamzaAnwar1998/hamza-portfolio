@@ -23,7 +23,7 @@ export const Home = () => {
   useEffect(()=>{
     getDownloadURL(ref(storage,'Resume.pdf')).then((url)=>{
       setResume(url);
-    },[])
+    },[]).catch(err=>console.log(err.message));
   })
 
   // to hide body scroll for login modal
