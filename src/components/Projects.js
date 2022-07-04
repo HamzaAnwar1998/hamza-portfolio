@@ -15,11 +15,11 @@ export const Projects = ({setImgModal, setProjectImg}) => {
   return (
     <>
      {projects.length>0&&(
-        <div className='projects-div'>
-          <h3 className='projects-heading'>Projects</h3>
-          <h2 className='projects-tagline'>
+        <div className='section-box'>
+          <h3 className='section-heading'>Projects</h3>
+          <h2 className='tagline'>
             Checkout some of my best 
-            <span className='projects-ui-ux'> projects</span>
+            <span className='ui-ux'> projects</span>
           </h2>
           <div className='categories-btns-div'>
               <button className='categories-btns active'>All</button>

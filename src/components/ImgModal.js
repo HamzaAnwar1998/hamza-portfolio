@@ -9,7 +9,7 @@ export const ImgModal = ({projectImg, setProjectImg, setImgModal}) => {
   }
 
   return (
-    <div className='background-shade'>
+    <div className='modal-background'>
         <div className='img-modal'>
             <div className='delete-icon' onClick={handleClose}>x</div>
             <img src={projectImg} alt="project"/>

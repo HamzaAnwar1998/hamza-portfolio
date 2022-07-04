@@ -1,15 +1,14 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React,{useState, useEffect} from 'react'
 import { Navbar } from "./Navbar";
 import { LoginModal } from './LoginModal';
 import { Hero } from "./Hero";
+import { storage } from '../config/firebase';
+import { getDownloadURL, ref } from 'firebase/storage';
+import { ResumeModal } from './ResumeModal';
 import { About } from "./About";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { ImgModal } from './ImgModal';
-import { ResumeModal } from './ResumeModal';
-import { storage } from '../config/firebase';
-import { getDownloadURL, ref } from 'firebase/storage';
 
 export const Home = () => {
 

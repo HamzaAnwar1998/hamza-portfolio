@@ -1,34 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap');
 
-.projects-div{
-    width: 100%;
-    height: auto;
-    padding: 50px;
-    background: #001435;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-.projects-heading{
-    color: #fff;
-    font-size: 24px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-
-.projects-tagline{
-    color: #fff;
-    font-size: 32px;
-    margin-top: 10px;
-    font-weight: 600;
-}
-  
-.projects-ui-ux{
-    color: #14bbea;
-}
-
 .categories-btns-div{
     margin-top: 50px;
     display: flex;
@@ -58,14 +29,14 @@
     background-color: #f0ab00;
 }
 
-.projects-div .projects-wrapper{
+.projects-wrapper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.projects-div .projects-wrapper .project-card{
+.projects-wrapper .project-card{
     width: 550px;
     height: auto;
     display: flex;
@@ -77,7 +48,7 @@
     padding: 15px;
 }
 
-.projects-div .projects-wrapper .project-content{
+.projects-wrapper .project-content{
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -85,19 +56,19 @@
     margin-right: 20px;
 }
 
-.projects-div .projects-wrapper .project-content .title{
+.projects-wrapper .project-content .title{
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
 
-.projects-div .projects-wrapper .project-content .description{
+.projects-wrapper .project-content .description{
     color: #cccccc;
     font-size: 16px;
     margin-top: 7px;
 }
 
-.projects-div .projects-wrapper .project-content .tech{
+.projects-wrapper .project-content .tech{
     color: #14bbea;
     font-size: 16px;
     font-weight: 600;
@@ -145,7 +116,7 @@
     text-decoration: none;
 }
 
-.projects-div .projects-wrapper .project-card .project-img{
+.projects-wrapper .project-card .project-img{
     flex: 1;
     height: auto;
     display: flex;
@@ -154,7 +125,7 @@
     align-items: center;
 }
 
-.projects-div .projects-wrapper .project-card .project-img span{
+.projects-wrapper .project-card .project-img span{
     font-size: 12px;
     text-align: center;
     margin-top: 7px;
@@ -162,11 +133,11 @@
     cursor: pointer;
 }
 
-.projects-div .projects-wrapper .project-card .project-img span:hover{
+.projects-wrapper .project-card .project-img span:hover{
     text-decoration: underline;
 }
 
-.projects-div .projects-wrapper .project-card .project-img img{
+.projects-wrapper .project-card .project-img img{
     width: 100%;
     height: auto;
 }

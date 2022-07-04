@@ -6,8 +6,8 @@ import {ic_emoji_objects_outline} from 'react-icons-kit/md/ic_emoji_objects_outl
 
 export const About = () => {
   return (
-    <div className='about-me'>
-        <h3 className='about-heading'>About Me</h3>
+    <div className='section-box'>
+        <h3 className='section-heading'>About Me</h3>
         <h2 className='tagline'>
             I love to Code 
             <span className='ui-ux'> UI/UX</span>

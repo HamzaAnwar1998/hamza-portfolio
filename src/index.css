@@ -94,7 +94,7 @@
   align-items: center;
 }
 
-.modal-container{
+.login-modal-container{
   width: 300px;
   height: auto;
   padding: 10px;
@@ -103,17 +103,17 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.modal-container .modal-heading{
+.login-modal-container .modal-heading{
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 7px;
   padding-bottom: 2px;
 }
 
-.modal-container input{
+.login-modal-container input{
   margin: 10px 0;
 }
 
-.modal-container button{
+.login-modal-container button{
   width: 100%;
   font-size: 14px;
   font-weight: 600;
@@ -122,7 +122,7 @@
   color: #fff;
 }
 
-.modal-container button:hover{
+.login-modal-container button:hover{
   color: #fff;
 }
 
@@ -211,21 +211,9 @@
 }
 
 /* resume-modal */
-.resume-backshadow{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-backshadow .resume-modal{
-  width: 700px;
-  height: 500px;
+.resume-modal-container{
+  width: 900px;
+  height: 600px;
   background-color: #fff;
   position: relative;
   display: flex;
@@ -234,7 +222,7 @@
 }
 
 /* about */
-.about-me{
+.section-box{
   width: 100%;
   height: auto;
   padding: 50px;
@@ -245,25 +233,25 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.about-me .about-heading{
+.section-box .section-heading{
   color: #fff;
   font-size: 24px;
   font-weight: 600;
   margin-top: 20px;
 }
 
-.about-me .tagline{
+.section-box .tagline{
   color: #fff;
   font-size: 32px;
   margin-top: 10px;
   font-weight: 600;
 }
 
-.about-me .tagline .ui-ux{
+.section-box .tagline .ui-ux{
   color: #14bbea;
 }
 
-.about-me .info{
+.section-box .info{
   width: 500px;
   text-align: center;
   color: #fff;
@@ -273,11 +261,11 @@
   margin-top: 25px;
 }
 
-.about-me .contact-btns-group{
+.section-box .contact-btns-group{
   margin-top: 35px;
 }
 
-.about-me .contact-btns-group button{
+.section-box .contact-btns-group button{
   width: 130px;
   padding: 10px 14px;
   margin: 0 15px;
@@ -289,19 +277,19 @@
   font-weight: 600;
 }
 
-.about-me .contact-btns-group button.fiverr-btn{
+.section-box .contact-btns-group button.fiverr-btn{
   background: #1dbd72;
   color: #fff;
   font-size: 14px;
 }
 
-.about-me .contact-btns-group button.upwork-btn{
+.section-box .contact-btns-group button.upwork-btn{
   border: 1px solid #14a800;
   background: transparent;
   color: #fff;
 }
 
-.about-me .core-programming-section{
+.section-box .core-programming-section{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -309,19 +297,19 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.about-me .core-programming-section .core-programming-heading{
+.section-box .core-programming-section .core-programming-heading{
   color: #fff;
   font-size: 28px;
   font-weight: 600;
 }
 
-.about-me .core-programming-section .principles-cards-box{
+.section-box .core-programming-section .principles-cards-box{
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
 }
 
-.about-me .core-programming-section .principles-cards-box .card{
+.section-box .core-programming-section .principles-cards-box .card{
   width: 250px;
   height: auto;
   background: #fff;
@@ -335,15 +323,15 @@
   cursor: pointer;
 }
 
-.about-me .core-programming-section .principles-cards-box .card.black{
+.section-box .core-programming-section .principles-cards-box .card.black{
   background-color: #000a1a;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .card-icon{
+.section-box .core-programming-section .principles-cards-box .card .card-icon{
   color: #1daede;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .card-heading{
+.section-box .core-programming-section .principles-cards-box .card .card-heading{
   font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
@@ -353,7 +341,7 @@
   color: #ffffff;
 }
 
-.about-me .core-programming-section .principles-cards-box .card .card-text{
+.section-box .core-programming-section .principles-cards-box .card .card-text{
   font-size: 14px;
   font-weight: 600;
   margin-top: 15px;
@@ -361,6 +349,6 @@
   text-align: center;
 }
 
-.about-me .core-programming-section .principles-cards-box .card.card.black .card-text{
+.section-box .core-programming-section .principles-cards-box .card.card.black .card-text{
   color: #cccccc;
 }

@@ -1,9 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable no-unused-vars */
 // import firebase/app
 import 'firebase/app'
 
-// we need to import and firebase/auth firebase/storage
+// we need to import firebase/auth firebase/storage
 import 'firebase/auth'
 import 'firebase/storage'
 

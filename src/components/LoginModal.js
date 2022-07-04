@@ -24,7 +24,7 @@ export const LoginModal = ({setLoginModal}) => {
 
   return (
     <div className='modal-background'>
-        <div className='modal-container'>
+        <div className='login-modal-container'>
             <div className='delete-icon' onClick={()=>setLoginModal(false)}>x</div>
             <h2 className='modal-heading'>Admin-Login</h2>
             <form className='form-group' onSubmit={handleLogin}>

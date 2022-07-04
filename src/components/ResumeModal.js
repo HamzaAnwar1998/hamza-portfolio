@@ -9,8 +9,8 @@ import React from 'react'
 export const ResumeModal = ({setResumeModal, resume}) => {
    
   return (
-    <div className='resume-backshadow'>
-        <div className='resume-modal'>
+    <div className='modal-background'>
+        <div className='resume-modal-container'>
             <div className='delete-icon' onClick={()=>setResumeModal(false)}>x</div>
             {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
             <Viewer fileUrl={resumePDF} />
