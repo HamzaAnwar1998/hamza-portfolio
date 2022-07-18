@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import '../components/css/Projects.css'
+import { uiDevelopment,reactDevelopment,firebaseDevelopment, allDevelopment } from '../redux/actions'
 
 export const Projects = ({setImgModal, setProjectImg}) => {
 
@@ -10,11 +11,12 @@ export const Projects = ({setImgModal, setProjectImg}) => {
     setProjectImg(img);
   }
 
-  const projects = useSelector((state)=>state.operationsReducer);
+  const state = useSelector((state)=>state.operationsReducer);
+  const dispatch = useDispatch();
 
   return (
     <>
-     {projects.length>0&&(
+     {state.projects.length>0&&(
         <div className='section-box'>
           <h3 className='section-heading'>Projects</h3>
           <h2 className='tagline'>
@@ -22,13 +24,30 @@ export const Projects = ({setImgModal, setProjectImg}) => {
             <span className='ui-ux'> projects</span>
           </h2>
           <div className='categories-btns-div'>
-              <button className='categories-btns active'>All</button>
-              <button className='categories-btns'>UI-Development</button>
-              <button className='categories-btns'>React-JS</button>
-              <button className='categories-btns'>Firebase</button>
+
+              <button onClick={()=>dispatch(allDevelopment())}
+                className={state.active===''?'categories-btns active':'categories-btns'}>
+                All
+              </button>
+
+              <button onClick={()=>dispatch(uiDevelopment('ui'))}
+                className={state.active==='ui'?'categories-btns active':'categories-btns'}>
+                UI-Development
+              </button>
+
+              <button onClick={()=>dispatch(reactDevelopment('react'))}
+                className={state.active==='react'?'categories-btns active':'categories-btns'}>
+                React-JS
+              </button>
+
+              <button onClick={()=>dispatch(firebaseDevelopment('firebase'))}
+                className={state.active==='firebase'?'categories-btns active':'categories-btns'}>
+                Firebase
+              </button>
+
           </div>
           <div className='projects-wrapper'>
-            {projects.map((project)=>(
+            {state.projects.map((project)=>(
                 <div className='project-card' key={project.id}>
                     <div className='project-content'>
                       <h4 className='title'>{project.title}</h4>
