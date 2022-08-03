@@ -24,8 +24,9 @@ export const firebaseDevelopment=(payload)=>{
     }
 }
 
-export const allDevelopment=()=>{
+export const allDevelopment=(payload)=>{
     return{
         type: ALL_DEVELOPMENT,
+        payload
     }
 }

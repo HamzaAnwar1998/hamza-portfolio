@@ -25,27 +25,33 @@ export const Projects = ({setImgModal, setProjectImg}) => {
           </h2>
           <div className='categories-btns-div'>
 
-              <button onClick={()=>dispatch(allDevelopment())}
-                className={state.active===''?'categories-btns active':'categories-btns'}>
+              <button onClick={()=>dispatch(allDevelopment('All'))}
+                className={state.active==='All'?'categories-btns active':'categories-btns'}>
                 All
               </button>
 
-              <button onClick={()=>dispatch(uiDevelopment('ui'))}
-                className={state.active==='ui'?'categories-btns active':'categories-btns'}>
+              <button onClick={()=>dispatch(uiDevelopment('UI-Development'))}
+                className={state.active==='UI-Development'?'categories-btns active':'categories-btns'}>
                 UI-Development
               </button>
 
-              <button onClick={()=>dispatch(reactDevelopment('react'))}
-                className={state.active==='react'?'categories-btns active':'categories-btns'}>
+              <button onClick={()=>dispatch(reactDevelopment('React-JS'))}
+                className={state.active==='React-JS'?'categories-btns active':'categories-btns'}>
                 React-JS
               </button>
 
-              <button onClick={()=>dispatch(firebaseDevelopment('firebase'))}
-                className={state.active==='firebase'?'categories-btns active':'categories-btns'}>
+              <button onClick={()=>dispatch(firebaseDevelopment('Firebase'))}
+                className={state.active==='Firebase'?'categories-btns active':'categories-btns'}>
                 Firebase
               </button>
 
           </div>
+          {state.projects.length>0&&(
+            <div className='projects-info'>
+              <h4>{state.active}</h4>
+              <span>Total Videos: {state.projects.length}</span>
+            </div>
+          )}
           <div className='projects-wrapper'>
             {state.projects.map((project)=>(
                 <div className='project-card' key={project.id}>

@@ -9,6 +9,8 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { ImgModal } from './ImgModal';
+import { Youtube } from './Youtube';
+import { YoutubeModal } from './YoutubeModal';
 
 export const Home = () => {
 
@@ -20,6 +22,10 @@ export const Home = () => {
   const [resumeModal, setResumeModal]=useState(false);
   const [resume, setResume]=useState(null);
 
+  const [youtubeModal, setYoutubeModal]=useState(false);
+  const [youtubeLink, setYoutubeLink]=useState(null);
+
+  // getting resume
   useEffect(()=>{
     getDownloadURL(ref(storage,'Resume.pdf')).then((url)=>{
       setResume(url);
@@ -56,6 +62,16 @@ export const Home = () => {
     }
   },[imgModal])
 
+  // to hide body scroll for youtube modal
+  useEffect(()=>{
+    if(youtubeModal===true){
+      document.body.style.overflow="hidden";
+    }
+    else if(youtubeModal===false){
+      document.body.style.overflow="auto";
+    }
+  },[youtubeModal])
+
   return (
     <div className="wrapper">
       <div className="background">
@@ -74,6 +90,11 @@ export const Home = () => {
       {imgModal===true&&(
           <ImgModal setImgModal={setImgModal} setProjectImg={setProjectImg}
           projectImg={projectImg}/>
+      )}
+      <Youtube setYoutubeModal={setYoutubeModal} setYoutubeLink={setYoutubeLink}/>
+      {youtubeModal===true&&(
+        <YoutubeModal setYoutubeModal={setYoutubeModal} setYoutubeLink={setYoutubeLink}
+        youtubeLink={youtubeLink}/>
       )}
     </div>
   )

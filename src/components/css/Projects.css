@@ -29,11 +29,20 @@
     background-color: #f0ab00;
 }
 
+.projects-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: #cccccc;
+    margin-top: 30px;
+    font-family: 'Roboto','sans-serif';
+}
+
 .projects-wrapper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .projects-wrapper .project-card{
@@ -44,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
     background: #000a1a;
-    margin: 20px;
+    margin: 5px 20px;
     padding: 15px;
 }
 

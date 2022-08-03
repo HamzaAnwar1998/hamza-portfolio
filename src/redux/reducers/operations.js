@@ -13,12 +13,12 @@ import space from '../../images/projects/space.PNG';
 import { ALL_DEVELOPMENT, FIREBASE_DEVELOPMENT, REACT_DEVELOPMENT, UI_DEVELOPMENT } from '../actions';
 
 const initialState={
-    active: '',
+    active: 'All',
     projects: [
         {
             id: 1,
             title: 'Metronic Dashboard',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'I cloned this using only React and CSS', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/metronic-dashboard',
@@ -28,7 +28,7 @@ const initialState={
         {
             id: 2,
             title: 'Azeel Solutions',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'This is a PSD to HTML task', 
             tech: 'HTML / CSS',
             github: '',
@@ -38,7 +38,7 @@ const initialState={
         {
             id: 3,
             title: 'Simplex Pharmacy',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'This is a PSD to React task', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Simplex',
@@ -48,7 +48,7 @@ const initialState={
         {
             id: 4,
             title: 'Virtual Exhibition',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'I developed the Landing Page and Signup/Login flows for the website to host online exhibitions', 
             tech: 'React-JS / CSS',
             github: '',
@@ -58,7 +58,7 @@ const initialState={
         {
             id: 5,
             title: 'Build my Ummah',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'This is a PSD to HTML task', 
             tech: 'HTML / CSS',
             github: 'https://github.com/HamzaAnwar1998/UmmahWebsite',
@@ -68,7 +68,7 @@ const initialState={
         {
             id: 6,
             title: 'Jobya',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'A landing page for a job searching website developed using React and CSS', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Jobya',
@@ -78,7 +78,7 @@ const initialState={
         {
             id: 7,
             title: 'Book-Store',
-            category: 'react',
+            category: 'React-JS',
             description: 'A simple book listing application allowing user to perform get and post actions on an API to create and read books', 
             tech: 'React-JS / Redux',
             github: 'https://github.com/HamzaAnwar1998/bookstore-react',
@@ -88,7 +88,7 @@ const initialState={
         {
             id: 8,
             title: 'Travel Agency',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'A PSD to React task', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Responsive-React-Site',
@@ -98,7 +98,7 @@ const initialState={
         {
             id: 9,
             title: 'Saylani Home Page',
-            category: 'ui',
+            category: 'UI-Development',
             description: 'This is a task given to students during Saylani Mass IT training', 
             tech: 'HTML / CSS',
             github: 'https://github.com/HamzaAnwar1998/SaylaniHomepage',
@@ -108,7 +108,7 @@ const initialState={
         {
             id: 10,
             title: 'Ecommerce App',
-            category: 'firebase',
+            category: 'Firebase',
             description: 'In this Application users can buy the listed products using stripe payment gateway or cash on delivery after they are registered', 
             tech: 'React / Firebase / Node-JS / Stripe',
             github: 'https://github.com/HamzaAnwar1998/ecommerce-node-react-app',
@@ -118,7 +118,7 @@ const initialState={
         {
             id: 11,
             title: 'Covid Stats',
-            category: 'react',
+            category: 'React-JS',
             description: 'Users can check for covid record of Asian countries', 
             tech: 'React / Redux / API',
             github: 'https://github.com/HamzaAnwar1998/covid-stats',
@@ -128,7 +128,7 @@ const initialState={
         {
             id: 12,
             title: 'Space Travelers Hub',
-            category: 'react',
+            category: 'React-JS',
             description: 'It is a web application that provides commercial and scientific space travelling services, We are working with real live data from the SpaceX API.', 
             tech: 'React / Redux / API',
             github: 'https://github.com/ksigei/space_travelers',
@@ -161,7 +161,7 @@ const operationsReducer=(state=initialState, action)=>{
             }
         case ALL_DEVELOPMENT:
             return{
-                active:'',
+                active:action.payload,
                 projects: projects
             }
         default:
