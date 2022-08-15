@@ -1,16 +1,26 @@
 import React,{useState} from 'react'
+
+// firebase
 import auth from '../config/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+
+// react router dom
 import {useNavigate} from 'react-router-dom';
+
+// framer-motion
+import {motion} from 'framer-motion'
 
 export const LoginModal = ({setLoginModal}) => {
 
+  // navigate method
   const navigate = useNavigate();
 
+  // states
   const [email, setEmail]=useState('');
   const [password, setPassword]=useState('');
   const [err, setErr]=useState(null);
 
+  // form submit event
   const handleLogin=(e)=>{
       e.preventDefault();
       signInWithEmailAndPassword(auth, email, password).then(()=>{
@@ -22,10 +32,45 @@ export const LoginModal = ({setLoginModal}) => {
       }).catch(err=>setErr(err.message))
   }
 
+  // backshadow variants
+  const backVariants={
+    hidden:{
+      opacity: 0
+    },
+    visible:{
+      opacity: 1,
+      transition:{
+        duration: 0.5
+      }
+    }
+  }
+
+  // modal variants
+  const modalVariants={
+    hidden:{
+      y:'-100vh'
+    },
+    visible:{
+      y:0,
+      transition:{
+        duration: 0.5
+      }
+    }
+  }
+
   return (
-    <div className='modal-background'>
-        <div className='login-modal-container'>
-            <div className='delete-icon' onClick={()=>setLoginModal(false)}>x</div>
+    <motion.div className='modal-background'
+    variants={backVariants} initial="hidden" 
+    animate="visible">
+
+        <motion.div className='login-modal-container'
+        variants={modalVariants} initial="hidden"
+        animate="visible">
+
+            <div className='delete-icon' onClick={()=>setLoginModal(false)}>
+              x
+            </div>
+            
             <h2 className='modal-heading'>Admin-Login</h2>
             <form className='form-group' onSubmit={handleLogin}>
                 <input type='email' className='form-control' required
@@ -39,7 +84,9 @@ export const LoginModal = ({setLoginModal}) => {
                   <span className='err-message'>{err}</span>
                 )}
             </form>
-        </div>
-    </div>
+
+        </motion.div>
+
+    </motion.div>
   )
 }

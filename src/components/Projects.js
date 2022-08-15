@@ -21,8 +21,9 @@ export const Projects = ({setImgModal, setProjectImg}) => {
           <h3 className='section-heading'>Projects</h3>
           <h2 className='tagline'>
             Checkout some of my best 
-            <span className='ui-ux'> projects</span>
+            <span className='color'> projects</span>
           </h2>
+
           <div className='categories-btns-div'>
 
               <button onClick={()=>dispatch(allDevelopment('All'))}
@@ -46,6 +47,7 @@ export const Projects = ({setImgModal, setProjectImg}) => {
               </button>
 
           </div>
+
           {state.projects.length>0&&(
             <div className='projects-info'>
               <h4>{state.active}</h4>
@@ -67,7 +69,7 @@ export const Projects = ({setImgModal, setProjectImg}) => {
                           </a>
                         ):(
                           <a className='github-btn not-available'>
-                            GitHub Not Available
+                            GitHub Unavailable
                           </a>
                         )}
                         {project.link !=='' ?(
@@ -77,7 +79,7 @@ export const Projects = ({setImgModal, setProjectImg}) => {
                           </a>
                         ):(
                           <a className='live-link-btn not-available'>
-                            Link Not Available
+                            Link Unavailable
                           </a>
                         )}
                       </div>

@@ -3,14 +3,16 @@ import './css/Skills.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+
 export const Skills=()=>{
     return(
         <div className='section-box'>
             <h3 className='section-heading'>My Skills</h3>
             <h2 className='tagline'>
                 Stuff I do 
-                <span className='ui-ux'> best</span>
+                <span className='color'> best</span>
             </h2>
+
             <div className='circular-progress-box'>
 
                 <div className='progress-box'>
@@ -78,6 +80,7 @@ export const Skills=()=>{
                 </div>
 
             </div>
+            
         </div>
     )
 }

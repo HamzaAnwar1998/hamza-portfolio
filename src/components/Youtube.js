@@ -2,8 +2,13 @@ import React from 'react'
 import logo from '../images/channel-logo.png';
 import '../components/css/Youtube.css';
 import { useSelector } from 'react-redux';
+
+// react icons kit
 import { Icon } from 'react-icons-kit'
 import {play} from 'react-icons-kit/fa/play'
+
+// framer motion
+import { motion } from 'framer-motion';
 
 export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
 
@@ -19,7 +24,7 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
         <h3 className='section-heading'>YouTube Videos</h3>
         <h2 className='tagline'>
             I love to create coding 
-            <span className='ui-ux'> tutorials</span>
+            <span className='color'> tutorials</span>
         </h2>
 
         <div className='subscription-section'>
@@ -29,7 +34,8 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
             <div className='channel-info'>
                 <div className='channel-name'>JS SOLUTIONS</div>
                 <div className='subscribe-button'>
-                    <div className='red-area'>SUBSCRIBE</div>
+                    <a className='red-area' href="https://www.youtube.com/c/jsSolutions?sub_confirmation=1"
+                    target={"_blank"} rel='noreferrer'>SUBSCRIBE</a>
                     <div className='white-area'>1.8K</div>
                 </div>
                 <div className='channel-views'>300K Channel Views</div>
@@ -45,21 +51,22 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
                 </div>
                 <div className='videos-wrapper'>
                      {videos.map((video)=>(
-                        <>
+                        <div key={video.id} >
                             {video.category==='most-viewed'&&(
-                                <div key={video.id} className='youtube-card'
+                                <motion.div className='youtube-card'
+                                whileHover={{ scale: 1.1 }}
                                 onClick={()=>handleYoutubeModal(video.link)}>
                                     <div className='thumbnail'>
                                         <img src={video.thumbnail} alt="thumbnail"/>
                                         <span className='play-icon'>
-                                            <Icon icon={play} size={48}/>
+                                            <Icon icon={play} size={42}/>
                                         </span>
                                     </div>
                                     <h4 className='video-title'>{video.title}</h4>
                                     <div className='video-views'>{video.views} views, {video.date} </div>
-                                </div>
+                                </motion.div>
                             )}
-                        </>
+                        </div>
                     ))}
                 </div>
                 <br></br>
@@ -69,9 +76,10 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
                 </div>
                 <div className='videos-wrapper'>
                     {videos.map((video)=>(
-                        <>
+                        <div key={video.id} >
                             {video.category==='latest'&&(
-                                <div key={video.id} className='youtube-card'
+                                <motion.div className='youtube-card'
+                                whileHover={{ scale: 1.1 }}
                                 onClick={()=>handleYoutubeModal(video.link)}>
                                     <div className='thumbnail'>
                                         <img src={video.thumbnail} alt="thumbnail"/>
@@ -81,9 +89,9 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
                                     </div>
                                     <h4 className='video-title'>{video.title}</h4>
                                     <div className='video-views'>{video.views} views, {video.date} </div>
-                                </div>
+                                </motion.div>
                             )}
-                        </>
+                        </div>
                     ))}
                 </div>
 

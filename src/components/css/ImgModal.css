@@ -1,5 +1,5 @@
 .img-modal{
-    width: 700px;
+    width: 600px;
     height: auto;
     border: 4px solid#f0ab00;
     position: relative;
@@ -8,4 +8,12 @@
 .img-modal img{
     width:100%;
     height: 100%;
+}
+
+@media(max-width: 1024px){
+
+    .img-modal{
+        width: 90%;
+    }
+    
 }
