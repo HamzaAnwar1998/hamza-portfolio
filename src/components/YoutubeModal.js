@@ -38,10 +38,6 @@ export const YoutubeModal = ({youtubeLink, setYoutubeModal}) => {
 
         <motion.div className='youtube-modal'
         variants={modalVariants} initial="hidden" animate="visible">
-
-            <div className='delete-icon' onClick={()=>setYoutubeModal(false)}>
-              x
-            </div>
               
             <ReactPlayer url={youtubeLink} controls playing
             className='youtube-player'
@@ -49,6 +45,10 @@ export const YoutubeModal = ({youtubeLink, setYoutubeModal}) => {
             height={100+'%'}/>
 
         </motion.div>
+
+        <div className='delete-icon' onClick={()=>setYoutubeModal(false)}>
+          X
+        </div>
 
     </motion.div>
   )

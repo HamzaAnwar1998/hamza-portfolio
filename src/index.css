@@ -177,19 +177,12 @@
 }
 
 .delete-icon{
-  background-color: #f0ab00;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 600;
-  position: absolute;
-  top: -15px;
-  right: -15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   z-index: 2;
@@ -201,7 +194,6 @@
   height: auto;
   padding: 10px;
   background-color: #fff;
-  position: relative;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -367,9 +359,8 @@
 /* resume-modal */
 .resume-modal-container{
   width: 900px;
-  height: 90vh;
+  height: 80vh;
   background-color: #fff;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -42,9 +42,9 @@ export const ImgModal = ({projectImg, setProjectImg, setImgModal}) => {
     variants={backVariants} initial="hidden" animate="visible">
         <motion.div className='img-modal'
         variants={modalVariants} initial="hidden" animate="visible">
-            <div className='delete-icon' onClick={handleClose}>x</div>
             <img src={projectImg} alt="project"/>
         </motion.div>
+        <div className='delete-icon' onClick={handleClose}>X</div>
     </motion.div>
   )
 }

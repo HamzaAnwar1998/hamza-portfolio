@@ -86,7 +86,7 @@ export const Projects = ({setImgModal, setProjectImg}) => {
                     </div>
                     <div className='project-img'>
                         <img src={project.img} alt="project-img"/>
-                        <span onClick={()=>handleImageModal(project.img)}>Click to enlarge image</span>
+                        <span onClick={()=>handleImageModal(project.fullSnap)}>Click to enlarge image</span>
                     </div>
                 </div>
             ))}

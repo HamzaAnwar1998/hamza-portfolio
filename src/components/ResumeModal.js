@@ -47,13 +47,15 @@ export const ResumeModal = ({setResumeModal, resume}) => {
     variants={backVariants} initial="hidden" animate="visible">
         <motion.div className='resume-modal-container'
         variants={modalVariants} initial="hidden" animate="visible">
-            <div className='delete-icon' onClick={()=>setResumeModal(false)}>x</div>
             {resume!==null&&(
               <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
                 <Viewer plugins={[defaultLayoutPluginInstance]} fileUrl={resume} />
               </Worker>
             )}
         </motion.div>
+        <div className='delete-icon' onClick={()=>setResumeModal(false)}>
+          X
+        </div>
     </motion.div>
   )
 }

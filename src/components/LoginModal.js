@@ -66,10 +66,6 @@ export const LoginModal = ({setLoginModal}) => {
         <motion.div className='login-modal-container'
         variants={modalVariants} initial="hidden"
         animate="visible">
-
-            <div className='delete-icon' onClick={()=>setLoginModal(false)}>
-              x
-            </div>
             
             <h2 className='modal-heading'>Admin-Login</h2>
             <form className='form-group' onSubmit={handleLogin}>
@@ -86,6 +82,10 @@ export const LoginModal = ({setLoginModal}) => {
             </form>
 
         </motion.div>
+
+        <div className='delete-icon' onClick={()=>setLoginModal(false)}>
+          X
+        </div>
 
     </motion.div>
   )

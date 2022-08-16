@@ -1,6 +1,7 @@
+// project snaps
 import metronic from '../../images/projects/metronic.jpeg';
 import azeel from '../../images/projects/azeel.PNG';
-import simplex1 from '../../images/projects/simplex1.PNG';
+import simplex from '../../images/projects/simplex.PNG';
 import VE from '../../images/projects/VE.PNG';
 import ummah from '../../images/projects/ummah.PNG';
 import jobya from '../../images/projects/jobya.PNG';
@@ -10,6 +11,14 @@ import saylani from '../../images/projects/saylani.PNG';
 import ecommerce from '../../images/projects/ecommerce.png';
 import covidstats from '../../images/projects/covidstats.PNG';
 import space from '../../images/projects/space.PNG';
+
+// project full snaps
+import azeelFull from '../../images/FullSnaps/azeelFull.jpg';
+import jobyaFull from '../../images/FullSnaps/jobyaFull.PNG';
+import saylaniFull from '../../images/FullSnaps/saylaniFull.PNG';
+import travelFull from '../../images/FullSnaps/travelFull.PNG';
+import ummahFull from '../../images/FullSnaps/ummahFull.PNG';
+
 import { ALL_DEVELOPMENT, FIREBASE_DEVELOPMENT, REACT_DEVELOPMENT, UI_DEVELOPMENT } from '../actions';
 
 const initialState={
@@ -23,7 +32,8 @@ const initialState={
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/metronic-dashboard',
             link: 'https://metronic-dashboard-5d523.web.app/',
-            img: metronic
+            img: metronic,
+            fullSnap: metronic
         },
         {
             id: 2,
@@ -33,7 +43,8 @@ const initialState={
             tech: 'HTML / CSS',
             github: '',
             link: 'https://azeelsolutions.web.app/',
-            img: azeel
+            img: azeel,
+            fullSnap: azeelFull
         },
         {
             id: 3,
@@ -42,8 +53,9 @@ const initialState={
             description: 'This is a PSD to React task', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Simplex',
-            link: 'http://simplex123.herokuapp.com/',
-            img: simplex1
+            link: 'https://simplex123.herokuapp.com/',
+            img: simplex,
+            fullSnap: simplex
         },
         {
             id: 4,
@@ -53,7 +65,8 @@ const initialState={
             tech: 'React-JS / CSS',
             github: '',
             link: 'https://virtualexhibitionwithevents.web.app/',
-            img: VE
+            img: VE,
+            fullSnap: VE
         },
         {
             id: 5,
@@ -63,7 +76,8 @@ const initialState={
             tech: 'HTML / CSS',
             github: 'https://github.com/HamzaAnwar1998/UmmahWebsite',
             link: 'https://hamzaanwar1998.github.io/UmmahWebsite/',
-            img: ummah
+            img: ummah,
+            fullSnap: ummahFull
         },
         {
             id: 6,
@@ -73,7 +87,8 @@ const initialState={
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Jobya',
             link: 'https://jobya-fc093.web.app/',
-            img: jobya
+            img: jobya,
+            fullSnap: jobyaFull
         },
         {
             id: 7,
@@ -83,7 +98,8 @@ const initialState={
             tech: 'React-JS / Redux',
             github: 'https://github.com/HamzaAnwar1998/bookstore-react',
             link: '',
-            img: bookstore
+            img: bookstore,
+            fullSnap: bookstore
         },
         {
             id: 8,
@@ -93,7 +109,8 @@ const initialState={
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Responsive-React-Site',
             link: 'https://reactsite-483eb.web.app/',
-            img: travel
+            img: travel,
+            fullSnap: travelFull
         },
         {
             id: 9,
@@ -103,7 +120,8 @@ const initialState={
             tech: 'HTML / CSS',
             github: 'https://github.com/HamzaAnwar1998/SaylaniHomepage',
             link: 'https://saylani-template.web.app/',
-            img: saylani
+            img: saylani,
+            fullSnap: saylaniFull
         },
         {
             id: 10,
@@ -113,7 +131,8 @@ const initialState={
             tech: 'React / Firebase / Node-JS / Stripe',
             github: 'https://github.com/HamzaAnwar1998/ecommerce-node-react-app',
             link: 'https://ecommerce-app-with-react-hooks.herokuapp.com/',
-            img: ecommerce
+            img: ecommerce,
+            fullSnap: ecommerce
         },
         {
             id: 11,
@@ -123,7 +142,8 @@ const initialState={
             tech: 'React / Redux / API',
             github: 'https://github.com/HamzaAnwar1998/covid-stats',
             link: 'https://covid-stats-debc3.web.app/',
-            img: covidstats
+            img: covidstats,
+            fullSnap: covidstats
         },
         {
             id: 12,
@@ -133,7 +153,8 @@ const initialState={
             tech: 'React / Redux / API',
             github: 'https://github.com/ksigei/space_travelers',
             link: 'https://space-travelers-s-hub.web.app/',
-            img: space
+            img: space,
+            fullSnap: space
         },
     ]
 }

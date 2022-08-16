@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Skills.css';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+// import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+// import 'react-circular-progressbar/dist/styles.css';
 
 
 export const Skills=()=>{
@@ -15,69 +15,46 @@ export const Skills=()=>{
 
             <div className='circular-progress-box'>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>CSS</h3>
-                    <CircularProgressbar value={90} text={`${90}%`} 
-                    styles={buildStyles({
-                        textColor: '#f0ab00',
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>CSS</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>Bootstrap</h3>
-                    <CircularProgressbar value={80} text={`${80}%`} 
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>Bootstrap</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>Transitions</h3>
-                    <CircularProgressbar value={75} text={`${75}%`} 
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+               
+                <div className='diamond'>
+                    <p className='diamond-text'>Transitions</p>
+                </div>
+             
+                <div className='diamond'>
+                    <p className='diamond-text'>JavaScript</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>JavaScript</h3>
-                    <CircularProgressbar value={75} text={`${75}%`} 
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>React</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>React</h3>
-                    <CircularProgressbar value={75} text={`${75}%`}
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>Redux</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>Redux</h3>
-                    <CircularProgressbar value={70} text={`${70}%`}
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>Firebase</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>Firebase</h3>
-                    <CircularProgressbar value={75} text={`${75}%`} 
-                    styles={buildStyles({
-                        textColor: '#f0ab00'
-                    })}/>
+                <div className='diamond'>
+                    <p className='diamond-text'>Git</p>
                 </div>
 
-                <div className='progress-box'>
-                    <h3 className='progress-heading'>GitHub</h3>
+                {/* <div className='progress-box'>
+                    <h3 className='progress-heading'>Git</h3>
                     <CircularProgressbar value={80} text={`${80}%`}
                     styles={buildStyles({
                         textColor: '#f0ab00',
                     })}/>
-                </div>
+                </div> */}
 
             </div>
             
