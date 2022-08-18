@@ -226,3 +226,12 @@
     }
 
 }
+
+/* hiding click to enalrge image on 1024px screens */
+@media(max-width: 1024px){
+
+    .projects-wrapper .project-card .project-img span{
+        display: none;
+    }
+
+}

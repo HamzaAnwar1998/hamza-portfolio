@@ -18,6 +18,8 @@ import jobyaFull from '../../images/FullSnaps/jobyaFull.PNG';
 import saylaniFull from '../../images/FullSnaps/saylaniFull.PNG';
 import travelFull from '../../images/FullSnaps/travelFull.PNG';
 import ummahFull from '../../images/FullSnaps/ummahFull.PNG';
+import simplexFull from '../../images/FullSnaps/simplexFull.PNG';
+import VE_Full from '../../images/FullSnaps/VE_Full.PNG';
 
 import { ALL_DEVELOPMENT, FIREBASE_DEVELOPMENT, REACT_DEVELOPMENT, UI_DEVELOPMENT } from '../actions';
 
@@ -55,7 +57,7 @@ const initialState={
             github: 'https://github.com/HamzaAnwar1998/Simplex',
             link: 'https://simplex123.herokuapp.com/',
             img: simplex,
-            fullSnap: simplex
+            fullSnap: simplexFull
         },
         {
             id: 4,
@@ -66,7 +68,7 @@ const initialState={
             github: '',
             link: 'https://virtualexhibitionwithevents.web.app/',
             img: VE,
-            fullSnap: VE
+            fullSnap: VE_Full
         },
         {
             id: 5,

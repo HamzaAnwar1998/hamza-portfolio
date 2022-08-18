@@ -178,14 +178,24 @@
 
 .delete-icon{
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   z-index: 2;
+  width: 30px;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-icon:hover{
+  background-color: #222;
 }
 
 /* login modal desktop */
