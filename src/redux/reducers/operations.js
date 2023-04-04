@@ -11,6 +11,9 @@ import saylani from '../../images/projects/saylani.PNG';
 import ecommerce from '../../images/projects/ecommerce.png';
 import covidstats from '../../images/projects/covidstats.PNG';
 import space from '../../images/projects/space.PNG';
+import donateNowDashboard from '../../images/projects/DonateNOW-Dashboard.png';
+import fiverrGig from '../../images/projects/fiverrGig.png';
+import trademate from '../../images/projects/TRADEMATE-Home-V1.0.png';
 
 // project full snaps
 import azeelFull from '../../images/FullSnaps/azeelFull.jpg';
@@ -20,6 +23,8 @@ import travelFull from '../../images/FullSnaps/travelFull.PNG';
 import ummahFull from '../../images/FullSnaps/ummahFull.PNG';
 import simplexFull from '../../images/FullSnaps/simplexFull.PNG';
 import VE_Full from '../../images/FullSnaps/VE_Full.PNG';
+import trademateFull from '../../images/FullSnaps/TRADEMATE-1.png';
+import emailTemplateFull from '../../images/FullSnaps/PasswordSuccessFullyChanged.png';
 
 import { ALL_DEVELOPMENT, FIREBASE_DEVELOPMENT, REACT_DEVELOPMENT, UI_DEVELOPMENT } from '../actions';
 
@@ -28,6 +33,39 @@ const initialState={
     projects: [
         {
             id: 1,
+            title: 'DonateNOW',
+            category: 'React-JS',
+            description: 'DonateNOW is a fast and easy way to donate to campaigns that you care about. It includes features such as: Tracking all your donations, Creating recurring donations, Following charities, Downloading a tax receipt', 
+            tech: 'React-JS / CSS / Redux / Laravel API',
+            github: 'Confidential',
+            link: 'Confidential',
+            img: donateNowDashboard,
+            fullSnap: donateNowDashboard
+        },
+        {
+            id: 2,
+            title: 'TRADEMATE',
+            category: 'React-JS',
+            description: 'Welcome to TRADEMATE - Your one-stop destination for the latest tech and lifestyle products! Shop with ease and confidence, and enjoy high-quality products at affordable prices.', 
+            tech: 'React-JS / Redux-ToolKit',
+            github: '',
+            link: 'https://trademate-e9bdc.web.app/',
+            img: trademate,
+            fullSnap: trademateFull
+        },
+        {
+            id: 3,
+            title: 'Email-Templates',
+            category: 'UI-Development',
+            description: 'Email Templates coded using HTML', 
+            tech: 'HTML / CSS',
+            github: '',
+            link: '',
+            img: fiverrGig,
+            fullSnap: emailTemplateFull
+        },
+        {
+            id: 4,
             title: 'Metronic Dashboard',
             category: 'UI-Development',
             description: 'I cloned this using only React and CSS', 
@@ -38,7 +76,7 @@ const initialState={
             fullSnap: metronic
         },
         {
-            id: 2,
+            id: 5,
             title: 'Azeel Solutions',
             category: 'UI-Development',
             description: 'This is a PSD to HTML task', 
@@ -49,7 +87,7 @@ const initialState={
             fullSnap: azeelFull
         },
         {
-            id: 3,
+            id: 6,
             title: 'Simplex Pharmacy',
             category: 'UI-Development',
             description: 'This is a PSD to React task', 
@@ -60,7 +98,7 @@ const initialState={
             fullSnap: simplexFull
         },
         {
-            id: 4,
+            id: 7,
             title: 'Virtual Exhibition',
             category: 'UI-Development',
             description: 'I developed the Landing Page and Signup/Login flows for the website to host online exhibitions', 
@@ -71,7 +109,7 @@ const initialState={
             fullSnap: VE_Full
         },
         {
-            id: 5,
+            id: 8,
             title: 'Build my Ummah',
             category: 'UI-Development',
             description: 'This is a PSD to HTML task', 
@@ -82,7 +120,7 @@ const initialState={
             fullSnap: ummahFull
         },
         {
-            id: 6,
+            id: 9,
             title: 'Jobya',
             category: 'UI-Development',
             description: 'A landing page for a job searching website developed using React and CSS', 
@@ -93,7 +131,7 @@ const initialState={
             fullSnap: jobyaFull
         },
         {
-            id: 7,
+            id: 10,
             title: 'Book-Store',
             category: 'React-JS',
             description: 'A simple book listing application allowing user to perform get and post actions on an API to create and read books', 
@@ -104,7 +142,7 @@ const initialState={
             fullSnap: bookstore
         },
         {
-            id: 8,
+            id: 11,
             title: 'Travel Agency',
             category: 'UI-Development',
             description: 'A PSD to React task', 
@@ -115,7 +153,7 @@ const initialState={
             fullSnap: travelFull
         },
         {
-            id: 9,
+            id: 12,
             title: 'Saylani Home Page',
             category: 'UI-Development',
             description: 'This is a task given to students during Saylani Mass IT training', 
@@ -126,7 +164,7 @@ const initialState={
             fullSnap: saylaniFull
         },
         {
-            id: 10,
+            id: 13,
             title: 'Ecommerce App',
             category: 'Firebase',
             description: 'In this Application users can buy the listed products using stripe payment gateway or cash on delivery after they are registered', 
@@ -137,7 +175,7 @@ const initialState={
             fullSnap: ecommerce
         },
         {
-            id: 11,
+            id: 14,
             title: 'Covid Stats',
             category: 'React-JS',
             description: 'Users can check for covid record of Asian countries', 
@@ -148,7 +186,7 @@ const initialState={
             fullSnap: covidstats
         },
         {
-            id: 12,
+            id: 15,
             title: 'Space Travelers Hub',
             category: 'React-JS',
             description: 'It is a web application that provides commercial and scientific space travelling services, We are working with real live data from the SpaceX API.', 

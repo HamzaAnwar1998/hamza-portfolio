@@ -63,23 +63,43 @@ export const Projects = ({setImgModal, setProjectImg}) => {
                       <div className='tech'>{project.tech}</div>
                       <div className='project-btns-group'>
                         {project.github !==''?(
-                          <a className='github-btn' href={project.github}
-                          target={'_blank'} rel='noreferrer'>
-                            GitHub
-                          </a>
+                          <>
+                            {project.github==='Confidential'?(
+                               <a className='github-btn'
+                               target={'_blank'} rel='noreferrer'>
+                                 Confidential
+                               </a>
+                            ):(
+                              <a className='github-btn' href={project.github}
+                              target={'_blank'} rel='noreferrer'>
+                                GitHub
+                              </a>
+                            )}
+                          </>
+                          
                         ):(
                           <a className='github-btn not-available'>
                             GitHub Unavailable
                           </a>
                         )}
-                        {project.link !=='' ?(
-                          <a className='live-link-btn' href={project.link}
-                          target={'_blank'} rel='noreferrer'>
-                            Live Link
-                          </a>
+                         {project.link !==''?(
+                          <>
+                            {project.link==='Confidential'?(
+                               <a className='live-link-btn'
+                               target={'_blank'} rel='noreferrer'>
+                                 Confidential
+                               </a>
+                            ):(
+                              <a className='live-link-btn' href={project.link}
+                              target={'_blank'} rel='noreferrer'>
+                                Live Link
+                              </a>
+                            )}
+                          </>
+                          
                         ):(
                           <a className='live-link-btn not-available'>
-                            Link Unavailable
+                            Live Link Unavailable
                           </a>
                         )}
                       </div>

@@ -28,11 +28,12 @@ export const About = () => {
             <span className='color'> UI/UX</span>
         </h2>
         <p className='info'>
-            I am a React Redux Developer. I have serious passion for
-            UI effects, animations and creating dynamic user experiences.
-            I can help you build a product, feature or website Look through
-            some of my work! If you like what you see and have a project you
-            need coded then feel free to contact me.
+            I am a skilled ReactJS developer with strong CSS skills and experience in
+            integrating APIs in web applications. With my expertise, I can help you 
+            build dynamic and responsive web applications that deliver a seamless user
+            experience. If you are looking for a skilled ReactJS developer who can deliver
+            exceptional results, please don't hesitate to contact me. Let's create something
+            great together!
         </p>
         <div className='contact-btns-group'>
 
