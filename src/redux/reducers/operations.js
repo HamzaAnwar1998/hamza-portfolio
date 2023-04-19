@@ -93,7 +93,7 @@ const initialState={
             description: 'This is a PSD to React task', 
             tech: 'React-JS / CSS',
             github: 'https://github.com/HamzaAnwar1998/Simplex',
-            link: 'https://simplex123.herokuapp.com/',
+            link: 'https://hamzaanwar1998.github.io/Simplex/',
             img: simplex,
             fullSnap: simplexFull
         },
