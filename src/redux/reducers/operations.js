@@ -11,7 +11,9 @@ import saylani from '../../images/projects/saylani.PNG';
 import ecommerce from '../../images/projects/ecommerce.png';
 import covidstats from '../../images/projects/covidstats.PNG';
 import space from '../../images/projects/space.PNG';
-import donateNowDashboard from '../../images/projects/DonateNOW-Dashboard.png';
+import donateNowDashboard from '../../images/projects/donor-portal.jpg';
+import crm from '../../images/projects/crm.jpg';
+import donateNowDesktop from '../../images/FullSnaps/donateNowDesktop.jpg';
 import fiverrGig from '../../images/projects/fiverrGig.png';
 import trademate from '../../images/projects/TRADEMATE-Home-V1.0.png';
 
@@ -32,6 +34,17 @@ const initialState={
     active: 'All',
     projects: [
         {
+            id: 0,
+            title: 'CRM Dashboard',
+            category: 'React-JS',
+            description: 'Developed CRM for organizations to manage Donor-Portal', 
+            tech: 'React-JS / CSS / Redux Toolkit / Laravel API',
+            github: 'Confidential',
+            link: 'Confidential',
+            img: crm,
+            fullSnap: crm
+        },
+        {
             id: 1,
             title: 'DonateNOW',
             category: 'React-JS',
@@ -39,7 +52,7 @@ const initialState={
             tech: 'React-JS / CSS / Redux / Laravel API',
             github: 'Confidential',
             link: 'Confidential',
-            img: donateNowDashboard,
+            img: donateNowDesktop,
             fullSnap: donateNowDashboard
         },
         {

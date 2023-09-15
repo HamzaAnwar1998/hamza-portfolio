@@ -59,9 +59,9 @@ export const Footer=()=>{
                         <a className='footer-red-area'
                         href="https://www.youtube.com/c/jsSolutions?sub_confirmation=1"
                         target={"_blank"} rel='noreferrer'>SUBSCRIBE</a>
-                        <div className='footer-white-area'>2.4K</div>
+                        <div className='footer-white-area'>3K</div>
                     </div>
-                    <div className='footer-channel-views'>400K Channel Views</div>
+                    <div className='footer-channel-views'>700K Channel Views</div>
                 </div>
             </div>
 

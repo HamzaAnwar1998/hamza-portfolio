@@ -36,9 +36,9 @@ export const Youtube = ({setYoutubeModal, setYoutubeLink}) => {
                 <div className='subscribe-button'>
                     <a className='red-area' href="https://www.youtube.com/c/jsSolutions?sub_confirmation=1"
                     target={"_blank"} rel='noreferrer'>SUBSCRIBE</a>
-                    <div className='white-area'>2.4K</div>
+                    <div className='white-area'>3K</div>
                 </div>
-                <div className='channel-views'>400K Channel Views</div>
+                <div className='channel-views'>700K Channel Views</div>
             </div>
         </div>
 

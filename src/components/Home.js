@@ -37,7 +37,7 @@ export const Home = () => {
 
   // getting resume link
   useEffect(()=>{
-    getDownloadURL(ref(storage,'Resume.pdf')).then((url)=>{
+    getDownloadURL(ref(storage,'Hamza-React-Dev-Resume.pdf')).then((url)=>{
       setResume(url);
     },[]).catch(err=>console.log(err.message));
   })
